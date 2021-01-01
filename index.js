@@ -18,3 +18,12 @@ setInterval(function(){
     car.css("padding-top", "0px"); //padding of car = 0
   }
 }, 10);
+var logo = $(".mnit-logo");
+setInterval(function(){
+  var h = logo.height();
+  h/=2;
+  h*=-1;
+  h+="px";
+  logo.css("margin-top", h);
+
+}, 500); 

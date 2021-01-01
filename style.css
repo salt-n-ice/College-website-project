@@ -1,7 +1,9 @@
 body{
   background-color: rgb(22, 80, 255);
 }
-
+.Topmost{
+  text-align: center;
+}
 .navitems{
     z-index:9;
    }
@@ -35,6 +37,21 @@ body{
   background-color: white;
 }
 
+.mnit-logo{
+  position: absolute;
+  display: block;
+  width: 13%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.my-4{
+  margin-top: 0 !important;
+}
+.pt-4 {
+    padding-top: 7rem!important;
+}
 /*footer*/
 
 /* Footer */
