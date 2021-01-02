@@ -137,3 +137,67 @@ section .section-title {
 #lastline a{
     color: gold;
 }
+
+/* @media (min-width: 768px) and (max-width: 1000px) {
+    .collapse {
+        display: none !important;
+    }
+ } */
+
+/* .form-search{
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  @media (max-width:480px) {
+    .form-search {
+      width: 60%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  } */
+
+/* @media (min-width: 768px) and (max-width: 1000px) {
+    .collapse {
+        display: none !important;
+    }
+ } */
+
+ /* @media screen and (min-width: 1000px) {
+    .navbar-brand {
+      float: left;
+      margin-right: 5px;
+      margin-left: -15px;
+    }
+    .navbar-nav {
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .navbar-nav > li {
+      float: left;
+    }
+    .navbar-nav > li > a {
+      border-radius: 0;
+    }
+    .navbar-nav.pull-right {
+      float: right;
+      width: auto;
+    }
+    .navbar-toggle {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: none;
+    }
+    .nav-collapse.collapse {
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+    }
+  } */
+
+  /* #navbarSupportedContent{
+      word-break: break-all;
+  } */
