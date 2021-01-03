@@ -34,16 +34,16 @@ setInterval(function(){
 // });
 
 // Changes the institute name to english and hindi every 5 seconds
-var instituteName = ['Malaviya National Institute of Technology, Jaipur', 'मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान, जयपुर'];
-var i = 0;
-var intervalId = setInterval(function() {
-  document.getElementById('instituteName').innerHTML = instituteName[i];
-  if (i == (instituteName.length - 1)) {
-    i = 0;
-    //we can even clear interval here to make heading stay as last one in array
-    //cleanInterval(intervalId);
-
-  } else {
-    i++;
-  }
-}, 5000)
+// var instituteName = ['Malaviya National Institute of Technology, Jaipur', 'मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान, जयपुर'];
+// var i = 0;
+// var intervalId = setInterval(function() {
+//   document.getElementById('instituteName').innerHTML = instituteName[i];
+//   if (i == (instituteName.length - 1)) {
+//     i = 0;
+//     //we can even clear interval here to make heading stay as last one in array
+//     //cleanInterval(intervalId);
+//
+//   } else {
+//     i++;
+//   }
+// }, 5000)
