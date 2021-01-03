@@ -27,27 +27,6 @@ setInterval(function(){
   logo.css("margin-top", h);
 
 }, 500);
-
-// Language Selector Button Code Currently Unused
-// $(function(){
-//   $('.selectpicker').selectpicker();
-// });
-
-// Changes the institute name to english and hindi every 5 seconds
-var instituteName = ['Malaviya National Institute of Technology, Jaipur', 'मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान, जयपुर'];
-var i = 0;
-var intervalId = setInterval(function() {
-  document.getElementById('instituteName').innerHTML = instituteName[i];
-  if (i == (instituteName.length - 1)) {
-    i = 0;
-    //we can even clear interval here to make heading stay as last one in array
-    //cleanInterval(intervalId);
-
-  } else {
-    i++;
-  }
-}, 5000)
-
 // Please Fix this Spacing Jugaad
 
 var instituteMotto = ['&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yogah Karmasu Kaushalam &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diligence leads to Excellence &nbsp; &nbsp; ', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; योग: कर्मसु कौशलम &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; परिश्रम उत्कृष्टता की ओर ले जाता है &nbsp; &nbsp;'];
@@ -62,4 +41,4 @@ var intervalId = setInterval(function() {
   } else {
     j++;
   }
-}, 5000)
+}, 5000);

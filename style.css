@@ -1,6 +1,25 @@
 body{
   background-color: rgb(22, 80, 255);
 }
+/* breakpoint of logo at 636px width */
+@media screen and (max-width: 650px) {
+  .top-logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* breakpoint of search-bar at 540px width */
+@media screen and (max-width: 540px) {
+  .search-bar{
+    width: 50%;
+  }
+  .lang-btn{
+    width: 40%;
+  }
+}
+.lang-txt{
+  font-size: 0.8rem;
+}
 .Topmost{
   text-align: center;
 }
@@ -225,7 +244,7 @@ section .section-title {
     margin-left:auto;
     margin-right:auto;
   }
-  
+
   @media (max-width:480px) {
     .form-search {
       width: 60%;
