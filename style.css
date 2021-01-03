@@ -55,16 +55,79 @@ body{
     font-weight: 600;
 }
 .cardbg{
-    background-color:  rgb(22, 80, 255);
+    background-color: rgb(22, 80, 255);
+    border-radius: 10px;
+    /* opacity: 50%; */
 }
+
 .spanbg{
     background-color: gold;
-    width: 250px;
+    width: 275px;
+    border-radius: 10px;
     margin: auto;
 }
 .pt-4 {
-    padding-top: 7rem!important;
+    padding-top: 7rem !important;
 }
+
+/* .mnitDaily_division{
+  
+  
+  background-color: #00567b;
+} */
+
+#emergencynums{
+  color: red;
+}
+#emergencyTables{
+  background-color: gold;
+}
+
+#instituteMotto{
+  color: gold;
+}
+#EMHeader{
+  color: blue;
+  background-color: gold;
+}
+.disclaim{
+  padding: 18px;
+  border: 10px solid gold;
+  margin: 20px;
+  color: gold;
+  text-size-adjust: 100px;
+  border-radius: 15px;
+}
+.disclink{
+  color: white;
+}
+#DisHeader{
+  color: blue;
+  background-color: gold;
+}
+#disclaimz{
+  padding: 18px;
+  border: 10px solid gold;
+  margin: 20px;
+  color: gold;
+  text-size-adjust: 100px;
+  border-radius: 15px;
+}
+.usefulcolor{
+  color: gold;
+}
+
+.mid{
+  background-image: url("mnit-convocation.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 1000px; */
+  /* height: 1000px; */
+  /* width: 1000px; */
+  background-size: 1920px 1500px;
+  background-attachment: fixed;
+  margin: auto;
+}
+
 /*footer*/
 
 /* Footer */

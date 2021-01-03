@@ -47,3 +47,17 @@ var intervalId = setInterval(function() {
     i++;
   }
 }, 5000)
+
+var instituteMotto = ['&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yogah Karmasu Kaushalam &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diligence leads to Excellence &nbsp; &nbsp; ', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; योग: कर्मसु कौशलम &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; परिश्रम उत्कृष्टता की ओर ले जाता है &nbsp; &nbsp;'];
+var j = 0;
+var intervalId = setInterval(function() {
+  document.getElementById('instituteMotto').innerHTML = instituteMotto[j];
+  if (j == (instituteMotto.length - 1)) {
+    j = 0;
+    //we can even clear interval here to make heading stay as last one in array
+    //cleanInterval(intervalId);
+
+  } else {
+    j++;
+  }
+}, 5000)
