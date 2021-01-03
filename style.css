@@ -49,6 +49,19 @@ body{
 .my-4{
   margin-top: 0 !important;
 }
+.my-4-h2{
+    text-align: center;
+    color:  rgb(22, 80, 255);
+    font-weight: 600;
+}
+.cardbg{
+    background-color:  rgb(22, 80, 255);
+}
+.spanbg{
+    background-color: gold;
+    width: 250px;
+    margin: auto;
+}
 .pt-4 {
     padding-top: 7rem!important;
 }
