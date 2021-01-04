@@ -74,7 +74,7 @@ body{
     font-weight: 600;
 }
 .cardbg{
-    background-color: rgb(22, 80, 255);
+    background-color: white;
     border-radius: 10px;
     /* opacity: 50%; */
 }
@@ -137,16 +137,44 @@ body{
 }
 
 .mid{
-  background-image: url("mnit-convocation.jpg");
+  background-color: white;
   background-repeat: no-repeat;
   /* background-size: 1000px; */
   /* height: 1000px; */
   /* width: 1000px; */
-  background-size: 1920px 1500px;
+  /* background-size: 1920px 1500px; */
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   margin: auto;
 }
+/* COUNTER */
 
+.counter-section{
+  margin: 10% auto;
+  color: rgb(0, 0, 0);
+}
+.icon-box{
+  border: 1px solid rgb(0, 0, 0);
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  transform: rotate(45deg);
+}
+.icon-box .fa{
+  font-size: 40px;
+  margin: 25px auto;
+  color: #ffc800;
+  transform: rotate(-45deg);
+}
+.counter-box p{
+  font-size: 20px;
+}
+.counter-box .counter{
+  font-size: 50px;
+}
+
+/* COUNTER ENDS */
 /*footer*/
 
 /* Footer */
