@@ -10,6 +10,8 @@
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
     <title> MNIT | Hydra </title>
   </head>
@@ -21,10 +23,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
               <div class="top-logo">
-                <span><a class="navbar-brand" href="#"> <img width="50px" src="Mnit_logo-1-298x300.png" alt=""> </a></span>
+                <span><a class="navbar-brand" href="index.html"> <img width="50px" src="Mnit_logo-1-298x300.png" alt=""> </a></span>
               </div>
 
-              <span>  <a class="nav-link active" style="color: gold;" id="color-yellow" aria-current="page" href="#"> <h3 class="Topmost" id="instituteName"> Malaviya National Institute of Technology, Jaipur </h3> </a></span>
+              <span>  <a class="nav-link active" style="color: gold;" id="color-yellow" aria-current="page" href="index.html"> <h3 class="Topmost" id="instituteName"> Malaviya National Institute of Technology, Jaipur </h3> </a></span>
 
               <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,11 +42,11 @@
                           <!-- language picker Radio button -->
 
                <div class="lang-btn btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-sm btn-warning active">
+                <label class="btn btn-sm btn-primary">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked> <span class="flag-icon flag-icon-us"></span>
                   <span class="lang-txt">English</p>
                 </label>
-                <label class="btn btn-sm btn-warning">
+                <label class="btn btn-sm btn-primary">
                   <input type="radio" name="options" id="option2" autocomplete="off"> <span class="flag-icon flag-icon-in"></span>
                   <span class="lang-txt">हिन्दी</p>
                 </label>
@@ -87,7 +89,7 @@
               Administration
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#"> Board of Governor </a></li>
+              <li><a class="dropdown-item" href="future.html"> Board of Governor </a></li>
               <li><a class="dropdown-item" href="#"> Chairman </a></li>
               <li><a class="dropdown-item" href="#"> Director </a></li>
               <li><a class="dropdown-item" href="#"> Building and Works Committee </a></li>
@@ -310,7 +312,6 @@
 </div>
 
 <!--MNIT DAILY ENDS HERE-->
-
 
 
 
@@ -670,6 +671,50 @@
       </div>
        <!-- Photo Gallery Ends here -->
 
+       <!-- counter file link and JQuery code to increment counter -->
+       <script src="jquery.counterup.min.js">  </script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+       <script>
+         jQuery(document).ready(function( $ )
+         {
+          $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+          });
+         });
+       </script>
+       <!-- counter increment code ends here -->
+
+       <!-- COUNTER  -->
+       <div class="endingPart">
+         <!-- <img src="counterimg.jpg" alt=""> -->
+        <div class="container counter-section">
+          <div class="row text-center">
+            <div class="col-md-3 counter-box">
+              <div class="icon-box"> <i class="fa fa-university" aria-hidden="true"></i> </div>
+              <p class="counter"> 1963 </p>
+              <p> Founded In </p>
+            </div>
+            <div class="col-md-3 counter-box">
+              <div class="icon-box"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> </div>
+              <p class="counter"> 8,746 </p>
+              <p> Students </p>
+            </div>
+            <div class="col-md-3 counter-box">
+              <div class="icon-box"> <i class="fa fa-users" aria-hidden="true"></i> </div>
+              <p class="counter"> 573 </p>
+              <p> Faculty </p>
+            </div>
+            <div class="col-md-3 counter-box">
+              <div class="icon-box"> <i class="fa fa-money" aria-hidden="true"></i> </div>
+              <p class="counter"> 786 </p>
+              <p> Students Placed </p>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
                                       <!-- This is the code for Footer -->
                     <!-- TODO IN FOOTER PLEASE FIX MAIL AND CALL NO. BUTTONS WITH APPROPRIATE LINKS-->
 
@@ -698,7 +743,7 @@
 						<li><a href="http://smrsi.org/icsm2020/"><i class="fa fa-angle-double-right"></i> ICSM - 2020 </a></li>
 						<li><a href="https://www.sec2020.org.in/"><i class="fa fa-angle-double-right"></i> SEC - 2020 </a></li>
 						<li><a href="http://brsi2020jaipur.in/"><i class="fa fa-angle-double-right"></i> BSAEH - 2021 </a></li>
-						<li><a href="Emergency.html"><i class="fa fa-angle-double-right"></i> <h4 id="emergencynums"> Emergency Numbers </h4> </a></li>
+						<li><a href="Emergency.html"> <h4 id="emergencynums"> Emergency Numbers </h4> </a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -718,12 +763,12 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="https://www.facebook.com/mnitjaipurindia/"> <i class="fa fa-facebook"></i> <img src="facebook.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/mnitjofficial"> <i class="fa fa-twitter"></i> <img src="twitter-logo-on-black-background.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="https://www.instagram.com/mnitjaipurindia/"> <i class="fa fa-instagram"></i> <img src="instagram.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="0141 252 9087"> <i class="fa fa-google-plus"></i> <img src="phone-call.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="https://www.linkedin.com/school/mnitjaipur/" target="_blank"><i class="fa fa-envelope"></i> <img src="linkedin-logo.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="academy@mnit.ac.in" target="_blank"><i class="fa fa-envelope"></i> <img src="kisspng-yahoo-mail-email-address-webmail-email-icon-5ac24c58bb5353.2728539615226829687673.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/mnitjaipurindia/">  <img src="facebook.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/mnitjofficial"> <img src="twitter-logo-on-black-background.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/mnitjaipurindia/">  <img src="instagram.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="0141 252 9087">  <img src="phone-call.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/school/mnitjaipur/" target="_blank"> <img src="linkedin-logo.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="academy@mnit.ac.in" target="_blank"> <img src="kisspng-yahoo-mail-email-address-webmail-email-icon-5ac24c58bb5353.2728539615226829687673.png" alt=""> </a></li>
 					</ul>
 				</div>
 				<hr>
