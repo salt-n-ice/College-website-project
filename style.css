@@ -260,6 +260,12 @@ section .section-title {
 #lastline a{
     color: gold;
 }
+.mnit-daily-heading{
+  padding: 10px;
+  color: rgb(22, 80, 255);
+  background-color: gold;
+  margin-bottom: 20px;
+}
 
 /* @media (min-width: 768px) and (max-width: 1000px) {
     .collapse {
