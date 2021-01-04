@@ -136,16 +136,6 @@ body{
   color: gold;
 }
 
-.mid{
-  background-image: url("mnit-convocation.jpg");
-  background-repeat: no-repeat;
-  /* background-size: 1000px; */
-  /* height: 1000px; */
-  /* width: 1000px; */
-  background-size: 1920px 1500px;
-  background-attachment: fixed;
-  margin: auto;
-}
 
 /*footer*/
 
