@@ -1,5 +1,24 @@
 body{
-  background-color: rgb(22, 80, 255);
+  background-color: rgba(22, 80, 255, 0.8);
+}
+/* breakpoint of logo at 636px width */
+@media screen and (max-width: 650px) {
+  .top-logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* breakpoint of search-bar at 540px width */
+@media screen and (max-width: 540px) {
+  .search-bar{
+    width: 50%;
+  }
+  .lang-btn{
+    width: 40%;
+  }
+}
+.lang-txt{
+  font-size: 0.8rem;
 }
 .Topmost{
   text-align: center;
@@ -49,9 +68,116 @@ body{
 .my-4{
   margin-top: 0 !important;
 }
-.pt-4 {
-    padding-top: 7rem!important;
+.my-4-h2{
+    text-align: center;
+    color:  rgb(22, 80, 255);
+    font-weight: 600;
 }
+.cardbg{
+    background-color: white;
+    border-radius: 10px;
+    /* opacity: 50%; */
+}
+
+.spanbg{
+    background-color: gold;
+    width: 275px;
+    border-radius: 10px;
+    margin: auto;
+}
+.pt-4 {
+    padding-top: 7rem !important;
+}
+
+/* .mnitDaily_division{
+  
+  
+  background-color: #00567b;
+} */
+
+#emergencynums{
+  color: red;
+}
+#emergencyTables{
+  background-color: gold;
+}
+
+#instituteMotto{
+  color: gold;
+  font-family: 'Poppins',sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+#EMHeader{
+  color: blue;
+  background-color: gold;
+}
+.disclaim{
+  padding: 18px;
+  border: 10px solid gold;
+  margin: 20px;
+  color: gold;
+  text-size-adjust: 100px;
+  border-radius: 15px;
+}
+.disclink{
+  color: white;
+}
+#DisHeader{
+  color: blue;
+  background-color: gold;
+}
+#disclaimz{
+  padding: 18px;
+  border: 10px solid gold;
+  margin: 20px;
+  color: gold;
+  text-size-adjust: 100px;
+  border-radius: 15px;
+}
+.usefulcolor{
+  color: gold;
+}
+
+.mid{
+  background-color: white;
+  background-repeat: no-repeat;
+  /* background-size: 1000px; */
+  /* height: 1000px; */
+  /* width: 1000px; */
+  /* background-size: 1920px 1500px; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: auto;
+}
+/* COUNTER */
+
+.counter-section{
+  margin: 10% auto;
+  color: rgb(0, 0, 0);
+}
+.icon-box{
+  border: 1px solid rgb(0, 0, 0);
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  transform: rotate(45deg);
+}
+.icon-box .fa{
+  font-size: 40px;
+  margin: 25px auto;
+  color: #ffc800;
+  transform: rotate(-45deg);
+}
+.counter-box p{
+  font-size: 20px;
+}
+.counter-box .counter{
+  font-size: 50px;
+}
+
+/* COUNTER ENDS */
 /*footer*/
 
 /* Footer */
@@ -137,6 +263,12 @@ section .section-title {
 #lastline a{
     color: gold;
 }
+.mnit-daily-heading{
+  padding: 10px;
+  color: rgb(22, 80, 255);
+  background-color: gold;
+  margin-bottom: 20px;
+}
 
 /* @media (min-width: 768px) and (max-width: 1000px) {
     .collapse {
@@ -149,7 +281,7 @@ section .section-title {
     margin-left:auto;
     margin-right:auto;
   }
-  
+
   @media (max-width:480px) {
     .form-search {
       width: 60%;
