@@ -55,15 +55,11 @@ $('a[href$="#Modal2"]').on( "click", function() {
 });
 // MODAL FN ENDS
 
-setInterval(function(){
-  if ($(".dropdown")[0]){
-    $('.dropdown').on('show.bs.dropdown', function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-      });
+  $('.dropdown').on('show.bs.dropdown', function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
 
-      // Add slideUp animation to Bootstrap dropdown when collapsing.
-      $('.dropdown').on('hide.bs.dropdown', function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-      });
-} 
-}, 100);
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
