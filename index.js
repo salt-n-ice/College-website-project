@@ -39,7 +39,6 @@ let intervalMotto = setInterval(function(){
   j%=4;
 }, 5000);
 
-<<<<<<< HEAD
 // MODAL
 $('a[href$="#Modal1"]').on( "click", function() {
   $('#Modal1').modal('show');
@@ -48,7 +47,8 @@ $('a[href$="#Modal1"]').on( "click", function() {
 $('a[href$="#Modal2"]').on( "click", function() {
   $('#Modal2').modal('show');
 });
-=======
+// MODAL FN ENDS
+
 $(function(){
 $('.dropdown').on('show.bs.dropdown', function(e){
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
@@ -64,4 +64,3 @@ $('.dropdown').on('show.bs.dropdown', function(e){
 
   });
 });
->>>>>>> 455817e1e854a65cd1e4f83bbcc83d19bf770333
