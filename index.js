@@ -1,8 +1,8 @@
 
 
 
-// $("#header").load("header.html");
-//   $("#footer").load("footer.html");
+ $("#header").load("header.html");
+   $("#footer").load("footer.html");
 
 function inViewport($el) {
     var elH = $el.outerHeight(),
