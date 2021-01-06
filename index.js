@@ -1,8 +1,8 @@
 
 
 
-$("#header").load("header.html");
-  $("#footer").load("footer.html");
+// $("#header").load("header.html");
+//   $("#footer").load("footer.html");
 
 function inViewport($el) {
     var elH = $el.outerHeight(),
@@ -55,18 +55,11 @@ $('a[href$="#Modal2"]').on( "click", function() {
 });
 // MODAL FN ENDS
 
-$(function(){
-$('.dropdown').on('show.bs.dropdown', function(e){
+$('.dropdown').on('show.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
   });
 
-  // ADD SLIDEUP ANIMATION TO DROPDOWN //
-  $('.dropdown').on('hide.bs.dropdown', function(e){
-    e.preventDefault();
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(400, function(){
-    	$('.dropdown').removeClass('open');
-      	$('.dropdown').find('.dropdown-toggle').attr('aria-expanded','false');
-    });
-
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
   });
-});
