@@ -4,9 +4,6 @@
 $("#header").load("header.html");
   $("#footer").load("footer.html");
 
-  var header = $(".header"); // first navbar
-  var nav = $(".sticky"); //second navbar
-  var car = $(".car"); //carousal
 function inViewport($el) {
     var elH = $el.outerHeight(),
         H   = $(window).height(),
@@ -14,6 +11,9 @@ function inViewport($el) {
     return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
 }
 setInterval(function(){
+  var header = $(".header"); // first navbar
+  var nav = $(".sticky"); //second navbar
+  var car = $(".car"); //carousal
   var h = nav.height().toString();
   if(inViewport(header)==0){
     nav.addClass("fixed-top");
