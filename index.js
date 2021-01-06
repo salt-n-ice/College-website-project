@@ -29,20 +29,17 @@ setInterval(function(){
 }, 500);
 // Please Fix this Spacing Jugaad
 
-var instituteMotto = ['&nbsp;&nbsp;&nbsp;&nbsp; Yogah Karmasu Kaushalam  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diligence leads to Excellence &nbsp; &nbsp; ', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; योग: कर्मसु कौशलम &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; परिश्रम उत्कृष्टता की ओर ले जाता है &nbsp; &nbsp;'];
-var j = 0;
-var intervalId = setInterval(function() {
-  document.getElementById('instituteMotto').innerHTML = instituteMotto[j];
-  if (j == (instituteMotto.length - 1)) {
-    j = 0;
-    //we can even clear interval here to make heading stay as last one in array
-    //cleanInterval(intervalId);
 
-  } else {
-    j++;
-  }
+var instituteMotto = ["Yogah Karmasu Kaushalam", "Diligence leads to Excellence", "योग: कर्मसु कौशलम", "परिश्रम उत्कृष्टता की ओर ले जाता है"]
+let j = 0;
+let intervalMotto = setInterval(function(){
+  $(".instituteMotto-l").html(instituteMotto[j]);
+  $(".instituteMotto-r").html(instituteMotto[j+1])
+  j+=2;
+  j%=4;
 }, 5000);
 
+<<<<<<< HEAD
 // MODAL
 $('a[href$="#Modal1"]').on( "click", function() {
   $('#Modal1').modal('show');
@@ -51,3 +48,20 @@ $('a[href$="#Modal1"]').on( "click", function() {
 $('a[href$="#Modal2"]').on( "click", function() {
   $('#Modal2').modal('show');
 });
+=======
+$(function(){
+$('.dropdown').on('show.bs.dropdown', function(e){
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // ADD SLIDEUP ANIMATION TO DROPDOWN //
+  $('.dropdown').on('hide.bs.dropdown', function(e){
+    e.preventDefault();
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(400, function(){
+    	$('.dropdown').removeClass('open');
+      	$('.dropdown').find('.dropdown-toggle').attr('aria-expanded','false');
+    });
+
+  });
+});
+>>>>>>> 455817e1e854a65cd1e4f83bbcc83d19bf770333
