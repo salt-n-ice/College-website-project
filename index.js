@@ -1,3 +1,12 @@
+$("#header").load("header.html");
+   $("#footer").load("footer.html");
+
+function inViewport($el) {
+    var elH = $el.outerHeight(),
+        H   = $(window).height(),
+        r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
+}
 var header = $(".header"); // first navbar
 var nav = $(".sticky"); //second navbar
 var car = $(".car"); //carousal
