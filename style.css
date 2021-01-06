@@ -120,7 +120,15 @@ float: left;
 .pt-4 {
     padding-top: 7rem !important;
 }
-
+.pt-3-5{
+  padding-top: 3.5rem !important;
+}
+.pb-3-5{
+  padding-bottom: 3.5rem !important;
+}
+.pt-0{
+  padding-top: 0 !important;
+}
 /* .mnitDaily_division{
 
 
@@ -300,6 +308,7 @@ section .section-title {
   color: rgb(22, 80, 255);
   background-color: gold;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 /* @media (min-width: 768px) and (max-width: 1000px) {
