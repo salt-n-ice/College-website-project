@@ -39,6 +39,16 @@ let intervalMotto = setInterval(function(){
   j%=4;
 }, 5000);
 
+// MODAL
+$('a[href$="#Modal1"]').on( "click", function() {
+  $('#Modal1').modal('show');
+});
+
+$('a[href$="#Modal2"]').on( "click", function() {
+  $('#Modal2').modal('show');
+});
+// MODAL FN ENDS
+
 $(function(){
 $('.dropdown').on('show.bs.dropdown', function(e){
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
