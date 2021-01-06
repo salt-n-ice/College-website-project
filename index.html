@@ -39,14 +39,16 @@
               <option><span class="flag-icon flag-icon-in"></span> हिन्दी </option>
               </select>
                -->
+
+
                           <!-- language picker Radio button -->
 
                <div class="lang-btn btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-sm btn-primary">
+                <label class="btn btn-sm btn-primary" for="option1">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked> <span class="flag-icon flag-icon-us"></span>
                   <span class="lang-txt">English</p>
                 </label>
-                <label class="btn btn-sm btn-primary">
+                <label class="btn btn-sm btn-primary" for="option2">
                   <input type="radio" name="options" id="option2" autocomplete="off"> <span class="flag-icon flag-icon-in"></span>
                   <span class="lang-txt">हिन्दी</p>
                 </label>
@@ -69,6 +71,9 @@
             </div>
           </nav>
     </div>
+
+    
+    
 
                                             <!-- 2nd navbar **PRIMARY COLOR (Currently Dark) **-->
 
@@ -272,6 +277,7 @@
       
 
 <div class="mid">
+
 
 <!-- MNIT DAILY -->
 
@@ -716,6 +722,44 @@
        <!-- fa fa-money -->
 
 
+       <!-- MODAL -->
+<!-- Modal 1 -->
+<div id="Modal1" class="modal fade" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> Phone No. </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> You can contact to this phone number: 0141 252 9087 </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+<div id="Modal2" class="modal fade" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> Mail </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> You can contact this mail: academy@mnit.ac.in </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
                                       <!-- This is the code for Footer -->
                     <!-- TODO IN FOOTER PLEASE FIX MAIL AND CALL NO. BUTTONS WITH APPROPRIATE LINKS-->
 
@@ -767,9 +811,9 @@
 						<li class="list-inline-item"><a href="https://www.facebook.com/mnitjaipurindia/">  <img src="facebook.png" alt=""> </a></li>
 						<li class="list-inline-item"><a href="https://twitter.com/mnitjofficial"> <img src="twitter-logo-on-black-background.png" alt=""> </a></li>
 						<li class="list-inline-item"><a href="https://www.instagram.com/mnitjaipurindia/">  <img src="instagram.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="0141-252-9087">  <img src="phone-call.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="#Modal1">  <img src="phone-call.png" alt=""> </a></li>
 						<li class="list-inline-item"><a href="https://www.linkedin.com/school/mnitjaipur/" target="_blank"> <img src="linkedin-logo.png" alt=""> </a></li>
-						<li class="list-inline-item"><a href="academy@mnit.ac.in" target="_blank"> <img src="kisspng-yahoo-mail-email-address-webmail-email-icon-5ac24c58bb5353.2728539615226829687673.png" alt=""> </a></li>
+						<li class="list-inline-item"><a href="#Modal2" target="_blank"> <img src="kisspng-yahoo-mail-email-address-webmail-email-icon-5ac24c58bb5353.2728539615226829687673.png" alt=""> </a></li>
 					</ul>
 				</div>
 				<hr>
