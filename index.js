@@ -1,6 +1,9 @@
-var header = $(".header"); // first navbar
-var nav = $(".sticky"); //second navbar
-var car = $(".car"); //carousal
+
+
+
+ $("#header").load("header.html");
+   $("#footer").load("footer.html");
+
 function inViewport($el) {
     var elH = $el.outerHeight(),
         H   = $(window).height(),
@@ -8,6 +11,9 @@ function inViewport($el) {
     return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
 }
 setInterval(function(){
+  var header = $(".header"); // first navbar
+  var nav = $(".sticky"); //second navbar
+  var car = $(".car"); //carousal
   var h = nav.height().toString();
   if(inViewport(header)==0){
     nav.addClass("fixed-top");
@@ -49,18 +55,11 @@ $('a[href$="#Modal2"]').on( "click", function() {
 });
 // MODAL FN ENDS
 
-$(function(){
-$('.dropdown').on('show.bs.dropdown', function(e){
+$('.dropdown').on('show.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
   });
 
-  // ADD SLIDEUP ANIMATION TO DROPDOWN //
-  $('.dropdown').on('hide.bs.dropdown', function(e){
-    e.preventDefault();
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(400, function(){
-    	$('.dropdown').removeClass('open');
-      	$('.dropdown').find('.dropdown-toggle').attr('aria-expanded','false');
-    });
-
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
   });
-});
