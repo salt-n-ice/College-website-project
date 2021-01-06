@@ -1,12 +1,12 @@
-var header = $(".header"); // first navbar
-var nav = $(".sticky"); //second navbar
-var car = $(".car"); //carousal
+
 
 
 $("#header").load("header.html");
-  $("#footer").load("footer.html"); 
+  $("#footer").load("footer.html");
 
-
+  var header = $(".header"); // first navbar
+  var nav = $(".sticky"); //second navbar
+  var car = $(".car"); //carousal
 function inViewport($el) {
     var elH = $el.outerHeight(),
         H   = $(window).height(),
