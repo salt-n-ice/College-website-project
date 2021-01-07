@@ -79,4 +79,4 @@ setTimeout(function(){
         alert("This feature will be added in the future!");
       });
 });
-}, 1000);
+}, 2000);
