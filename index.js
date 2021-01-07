@@ -38,8 +38,6 @@ setInterval(function(){
   logo.css("margin-top", h);
 
 }, 500);
-// Please Fix this Spacing Jugaad
-
 
 var instituteMotto = ["Yogah Karmasu Kaushalam", "Diligence leads to Excellence", "योग: कर्मसु कौशलम", "परिश्रम उत्कृष्टता की ओर ले जाता है"]
 let j = 0;
@@ -69,4 +67,19 @@ setTimeout(function(){
     $('.dropdown').on('hide.bs.dropdown', function() {
       $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
+}, 1000);
+setTtimeout(function(){
+var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर"];
+var i = 0;
+var intervalId = setInterval(function() {
+  document.getElementById('instituteName').innerHTML = instituteName[i];
+  if (i == (instituteName.length - 1)) {
+    i = 0;
+    //you can even clear interval here to make heading stay as last one in array
+    //cleanInterval(intervalId);
+
+  } else {
+    i++;
+  }
+}, 5000);
 }, 1000);
