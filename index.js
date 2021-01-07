@@ -1,5 +1,5 @@
-$("#header").load("header.html");
-   $("#footer").load("footer.html");
+$("#header").load("/header.html");
+   $("#footer").load("/footer.html");
 
 function inViewport($el) {
     var elH = $el.outerHeight(),
@@ -38,6 +38,19 @@ setInterval(function(){
   logo.css("margin-top", h);
 
 }, 500);
+
+
+var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय  &nbsp राष्ट्रीय &nbsp प्रौद्योगिकी  &nbsp संस्थान &nbsp जयपुर"];
+setTimeout(function(){
+  let j = 0;
+  var intervalId = setInterval(function() {
+    $('#instituteName').html(instituteName[j]);
+    j++;
+    j%=2;
+  }, 5000);
+}, 2000);
+
+
 
 var instituteMotto = ["Yogah Karmasu Kaushalam", "Diligence leads to Excellence", "योग: कर्मसु कौशलम", "परिश्रम उत्कृष्टता की ओर ले जाता है"]
 let j = 0;
