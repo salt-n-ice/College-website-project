@@ -47,10 +47,42 @@ body{
     padding-left: 40px;
     padding-right: 40px;
 }
-.dropdown:hover > .dropdown-menu {
+/* .dropdown:hover > .dropdown-menu {
     display: block;
+} */
+
+.instituteMotto-l{
+  float: left;
+  width: 50%;
+  font-family: 'Brush Script MT', cursive;
+  background-color: rgb(22, 80, 255);
+  color: gold;
+  padding-top: 10px;
+  padding-left: 15%;
+}
+.instituteMotto-r{
+float: left;
+  width: 50%;
+  text-align: right;
+  font-family: 'Brush Script MT', cursive;
+  background-color: rgb(22, 80, 255);
+  color: gold;
+  padding-top: 10px;
+  padding-right: 5%;
 }
 
+@media screen and (max-width: 1000px) {
+  .instituteMotto-l {
+    width: 0%;
+    font-size: 0%;
+    background-color: white;
+  }
+  .instituteMotto-r {
+    width: 0%;
+    font-size: 0%;
+    background-color: white;
+  }
+}
 
 .mid{
   background-color: white;
@@ -88,10 +120,18 @@ body{
 .pt-4 {
     padding-top: 7rem !important;
 }
-
+.pt-3-5{
+  padding-top: 3.5rem !important;
+}
+.pb-3-5{
+  padding-bottom: 3.5rem !important;
+}
+.pt-0{
+  padding-top: 0 !important;
+}
 /* .mnitDaily_division{
-  
-  
+
+
   background-color: #00567b;
 } */
 
@@ -268,6 +308,7 @@ section .section-title {
   color: rgb(22, 80, 255);
   background-color: gold;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 /* @media (min-width: 768px) and (max-width: 1000px) {
