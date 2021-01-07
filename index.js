@@ -81,4 +81,4 @@ var intervalId = setInterval(function() {
   } else {
     i++;
   }
-}, 5000)
+}, 5000);
