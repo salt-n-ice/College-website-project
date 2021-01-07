@@ -16,7 +16,7 @@ function inViewport($el) {
     return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
 }
 setInterval(function(){
-  var header = $(".header"); // first navbarz
+  var header = $(".header"); // first navbar
   var nav = $(".sticky"); //second navbar
   var car = $(".car"); //carousal
   var h = nav.height().toString();
@@ -68,7 +68,7 @@ setTimeout(function(){
       $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
 }, 1000);
-
+setTtimeout(function(){
 var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर"];
 var i = 0;
 var intervalId = setInterval(function() {
@@ -82,3 +82,4 @@ var intervalId = setInterval(function() {
     i++;
   }
 }, 5000);
+}, 1000);
