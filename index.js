@@ -69,14 +69,18 @@ setTimeout(function(){
 
 
 //add footer or header elements here
-      $(".search-button").click(function(){
-        alert("This feature will be added in the future!");
-      });
-      $(".radio-input-1").click(function(){
-        alert("This feature will be added in the future!");
-      });
-      $(".radio-input-2").click(function(){
-        alert("This feature will be added in the future!");
-      });
+
 });
-}, 2000);
+}, 1000);
+
+setTimeout(function(){
+  $(".search-button").click(function(){
+    alert("This feature will be added in the future!");
+  });
+  $(".radio-input-1").click(function(){
+    alert("This feature will be added in the future!");
+  });
+  $(".radio-input-2").click(function(){
+    alert("This feature will be added in the future!");
+  });
+}, 3000);
