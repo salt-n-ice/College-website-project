@@ -68,7 +68,7 @@ setTimeout(function(){
       $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
 }, 1000);
-setTtimeout(function(){
+setTimeout(function(){
 var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर"];
 var i = 0;
 var intervalId = setInterval(function() {
