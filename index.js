@@ -66,20 +66,17 @@ setTimeout(function(){
     // Add slideUp animation to Bootstrap dropdown when collapsing.
     $('.dropdown').on('hide.bs.dropdown', function() {
       $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
-}, 1000);
-setTimeout(function(){
-var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर"];
-var i = 0;
-var intervalId = setInterval(function() {
-  document.getElementById('instituteName').innerHTML = instituteName[i];
-  if (i == (instituteName.length - 1)) {
-    i = 0;
-    //you can even clear interval here to make heading stay as last one in array
-    //cleanInterval(intervalId);
 
-  } else {
-    i++;
-  }
-}, 5000);
+
+//add footer or header elements here
+      $(".search-button").click(function(){
+        alert("This feature will be added in the future!");
+      });
+      $(".radio-input-1").click(function(){
+        alert("This feature will be added in the future!");
+      });
+      $(".radio-input-2").click(function(){
+        alert("This feature will be added in the future!");
+      });
+});
 }, 1000);
