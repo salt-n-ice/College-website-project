@@ -44,15 +44,18 @@ var instituteName = ["Malaviya National Institute of Technology, Jaipur", "म�
 setTimeout(function(){
   let j = 0;
   var intervalId = setInterval(function() {
-    $("#instituteName").fadeOut();
-
+    // $("#instituteName").fadeOut();
+    $("#instituteName").addClass("hidden");
     setTimeout(function(){
       $('#instituteName').html(instituteName[j]);
-      $("#instituteName").fadeIn();
+      $("#instituteName").removeClass("hidden");
+      $("#instituteName").addClass("visible");
+
+      // $("#instituteName").fadeIn();
     }, 700);
     j++;
     j%=2;
-  }, 5000);
+  }, 6000);
 }, 2000);
 
 
@@ -60,18 +63,24 @@ setTimeout(function(){
 var instituteMotto = ["Yogah Karmasu Kaushalam", "Diligence leads to Excellence", "योग: कर्मसु कौशलम", "परिश्रम उत्कृष्टता की ओर ले जाता है"]
 let j = 0;
 let intervalMotto = setInterval(function(){
-  $(".instituteMotto-l").fadeOut();
-  $("#instituteMotto-r").fadeOut();
-
+  // $(".instituteMotto-l").fadeOut();
+  // $(".instituteMotto-r").fadeOut();
+$(".instituteMotto-l").addClass("hidden");
+$(".instituteMotto-r").addClass("hidden");
   setTimeout(function(){
     $(".instituteMotto-l").html(instituteMotto[j]);
     $(".instituteMotto-r").html(instituteMotto[j+1]);
-    $("#instituteMotto-l").fadeIn();
-    $("#instituteMotto-r").fadeIn();
+    $(".instituteMotto-l").removeClass("hidden");
+    $(".instituteMotto-r").removeClass("hidden");
+    $(".instituteMotto-l").addClass("visible");
+    $(".instituteMotto-r").addClass("visible");
+
+    // $(".instituteMotto-l").fadeIn();
+    // $(".instituteMotto-r").fadeIn();
   }, 700);
   j+=2;
   j%=4;
-}, 5000);
+}, 6000);
 
 // MODAL
 $('a[href$="#Modal1"]').on( "click", function() {
