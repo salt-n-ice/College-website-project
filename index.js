@@ -1,5 +1,5 @@
-$("#header").load("/header.html");
-   $("#footer").load("/footer.html");
+$("#header").load("/College-website-project/header.html");
+   $("#footer").load("/College-website-project/footer.html");
 
 function inViewport($el) {
     var elH = $el.outerHeight(),
