@@ -44,7 +44,11 @@ var instituteName = ["Malaviya National Institute of Technology, Jaipur", "म�
 setTimeout(function(){
   let j = 0;
   var intervalId = setInterval(function() {
+    $("#instituteName").fadeOut();
     $('#instituteName').html(instituteName[j]);
+    setTimeout(function(){
+      $("#instituteName").fadeIn();
+    }, 500);
     j++;
     j%=2;
   }, 5000);
@@ -55,8 +59,14 @@ setTimeout(function(){
 var instituteMotto = ["Yogah Karmasu Kaushalam", "Diligence leads to Excellence", "योग: कर्मसु कौशलम", "परिश्रम उत्कृष्टता की ओर ले जाता है"]
 let j = 0;
 let intervalMotto = setInterval(function(){
+  $(".instituteMotto-l").fadeOut();
+  $("#instituteMotto-r").fadeOut();
   $(".instituteMotto-l").html(instituteMotto[j]);
-  $(".instituteMotto-r").html(instituteMotto[j+1])
+  $(".instituteMotto-r").html(instituteMotto[j+1]);
+  setTimeout(function(){
+    $("#instituteMotto-l").fadeIn();
+    $("#instituteMotto-r").fadeIn();
+  }, 500);
   j+=2;
   j%=4;
 }, 5000);
