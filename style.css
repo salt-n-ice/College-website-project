@@ -33,6 +33,19 @@ body{
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
 }
+@media screen and (max-width: 500px) {
+  .visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0s linear;
+  }
+  .hidden{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0s linear;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .headd{
     width: 90%;
