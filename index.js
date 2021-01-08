@@ -1,5 +1,5 @@
-$("#header").load("header.html");
-   $("#footer").load("footer.html");
+$("#header").load("/College-website-project/header.html");
+   $("#footer").load("/College-website-project/footer.html");
 
 function inViewport($el) {
     var elH = $el.outerHeight(),
@@ -39,6 +39,19 @@ setInterval(function(){
 
 }, 500);
 
+
+var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय  &nbsp राष्ट्रीय &nbsp प्रौद्योगिकी  &nbsp संस्थान &nbsp जयपुर"];
+setTimeout(function(){
+  let j = 0;
+  var intervalId = setInterval(function() {
+    $('#instituteName').html(instituteName[j]);
+    j++;
+    j%=2;
+  }, 5000);
+}, 2000);
+
+
+
 var instituteMotto = ["Yogah Karmasu Kaushalam", "Diligence leads to Excellence", "योग: कर्मसु कौशलम", "परिश्रम उत्कृष्टता की ओर ले जाता है"]
 let j = 0;
 let intervalMotto = setInterval(function(){
@@ -66,20 +79,21 @@ setTimeout(function(){
     // Add slideUp animation to Bootstrap dropdown when collapsing.
     $('.dropdown').on('hide.bs.dropdown', function() {
       $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+
+
+//add footer or header elements here
+
 });
 }, 1000);
-setTimeout(function(){
-var instituteName = ["Malaviya National Institute of Technology, Jaipur", "मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर"];
-var i = 0;
-var intervalId = setInterval(function() {
-  document.getElementById('instituteName').innerHTML = instituteName[i];
-  if (i == (instituteName.length - 1)) {
-    i = 0;
-    //you can even clear interval here to make heading stay as last one in array
-    //cleanInterval(intervalId);
 
-  } else {
-    i++;
-  }
-}, 5000);
-}, 1000);
+setTimeout(function(){
+  $(".search-button").click(function(){
+    alert("This feature will be added in the future!");
+  });
+  $(".radio-input-1").click(function(){
+    alert("This feature will be added in the future!");
+  });
+  $(".radio-input-2").click(function(){
+    alert("This feature will be added in the future!");
+  });
+}, 3000);
