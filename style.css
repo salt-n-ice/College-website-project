@@ -17,11 +17,26 @@ body{
     width: 40%;
   }
 }
+
+.headd{
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .headd{
+    width: 90%;
+    margin-ing-left: auto;
+    margin-right: auto;
+  }
+}
+
 .lang-txt{
   font-size: 0.8rem;
 }
 .Topmost{
   text-align: center;
+}
+.instituteMotto{
+  padding-right: 30px;
 }
 .navitems{
     z-index:9;
