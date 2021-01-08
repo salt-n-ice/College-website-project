@@ -96,4 +96,10 @@ setTimeout(function(){
   $(".radio-input-2").click(function(){
     alert("This feature will be added in the future!");
   });
+  $(".future1").click(function(){
+    alert("You can contact to this phone number: 0141 252 9087");
+  });
+  $(".future2").click(function(){
+    alert("You can contact this mail: academy@mnit.ac.in");
+  });
 }, 3000);
